@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+    demo_tf_serving:
+        build: ./app
+        restart: unless-stopped
+        env_file:
+            - .barbara_env
+        volumes:
+            - ./appconfig/:/appconfig/
+        mem_limit: 400mb
+        network_mode: host
+
+networks:
+    barbaraServices:
+        driver: bridge
+        name: barbaraServices
