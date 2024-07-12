@@ -2,7 +2,7 @@
 import time
 
 while True:
-    for i in range(1,21):
+    for i in range(1,2000):
         print("the number is: ", i)
         time.sleep(1)
     print("End of the loop, starting again...")
