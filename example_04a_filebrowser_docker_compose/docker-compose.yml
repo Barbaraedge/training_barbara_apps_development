@@ -4,9 +4,4 @@ services:
   filebrowser:
     image: reg.barbaralabs.com/bbr_test/filebrowser:latest
     ports:
-      - 8080:8080
-    volumes:
-      - ./filebrowser:/shared
-
-  python_test:
-    build: .
+      - 8080:8080    

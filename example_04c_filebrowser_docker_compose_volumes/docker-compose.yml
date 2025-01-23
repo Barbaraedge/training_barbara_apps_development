@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  filebrowser:
+    image: reg.barbaralabs.com/bbr_test/filebrowser:latest
+    ports:
+      - 8080:8080
+    volumes:
+      - filebrowser-volume:/shared
+
+volumes: 
+  filebrowser-volume:
+    driver: local
+    name: filebrowser-interno
